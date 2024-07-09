@@ -12,6 +12,27 @@
             margin-top: 30px;
             margin-bottom: 20px;
         }
+
+        .speech-bubble {
+            min-height: 200px;
+            min-width: 100px;
+            border-radius: 20px;
+            padding: 25%;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .speech-bubble::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 25%;
+            height: 20px;
+            width: 20px;
+            box-sizing: border-box;
+            transform: rotate(45deg) translate(-75%);
+            background: inherit;
+        }
     </style>
 </head>
 
@@ -60,194 +81,46 @@
                     we've
                     heard things like this in our interviews:</p>
 
-
-                <div id="quote-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <!-- <img src="..." class="d-block w-100" alt="..."> -->
-                            <!-- Instead of image, div with style and min-height -->
-                            <div class="container">
-                                <div style="min-height: 250px;">
-                                    <div class="carousel-caption d-block">
-                                        <p class="fs-4">"I spent a lot of time planning and I couldn't even start
-                                            programming. [...] I felt so bad because of it." </p>
-                                    </div>
-                                </div>
-                            </div><!-- end of div style min-height: 250px; -->
-                        </div>
-                        <div class="carousel-item">
-                            <!-- Instead of image, div with style and min-height -->
-                            <div class="container">
-                                <div style="min-height: 250px;">
-                                    <div class="carousel-caption d-block">
-                                        <p class="fs-4">"When I struggle, [...] I'm inclining towards not getting a good
-                                            grade rather than getting a good grade." </p>
-                                    </div>
-                                </div>
-                            </div><!-- end of div style min-height: 250px; -->
-                        </div>
-                        <div class="carousel-item">
-                            <!-- Instead of image, div with style and min-height -->
-                            <div class="container">
-                                <div style="min-height: 250px;">
-                                    <div class="carousel-caption d-block">
-                                        <p class="fs-4">"When I don't know where to begin or what I should write down
-                                            first
-                                            or import some data, I just feel like, 'oh, I'm really bad on programing.'"
-                                    </div>
-                                    </p>
-                                </div>
-                            </div><!-- end of div style min-height: 250px; -->
-                        </div>
-                        <div class="carousel-item">
-                            <!-- Instead of image, div with style and min-height -->
-                            <div class="container">
-                                <div style="min-height: 250px;">
-                                    <div class="carousel-caption d-block">
-                                        <p class="fs-4">"So if I look for help, it's because something is wrong. So this
-                                            is
-                                            a red flag that I [...] did not understand the content [...] or I'm
-                                            doing
-                                            badly." </p>
-                                    </div>
-                                </div>
-                            </div><!-- end of div style min-height: 250px; -->
-                        </div>
-                        <div class="carousel-item">
-                            <!-- Instead of image, div with style and min-height -->
-                            <div class="container">
-                                <div style="min-height: 250px;">
-                                    <div class="carousel-caption d-block">
-                                        <p class="fs-4">"I felt like I was behind and other people wouldn't take [...]
-                                            as
-                                            long." </p>
-                                    </div>
-                                </div>
-                            </div><!-- end of div style min-height: 250px; -->
-                        </div>
-                        <div class="carousel-item">
-                            <!-- Instead of image, div with style and min-height -->
-                            <div class="container">
-                                <div style="min-height: 250px;">
-                                    <div class="carousel-caption d-block">
-                                        <p class="fs-4">"Having to use an outside resource [...] maybe I shouldn't have
-                                            to
-                                            use makes me feel like I could do better." </p>
-                                    </div>
-                                </div>
-                            </div><!-- end of div style min-height: 250px; -->
-                        </div>
-                        <div class="carousel-item">
-                            <!-- Instead of image, div with style and min-height -->
-                            <div class="container">
-                                <div style="min-height: 250px;">
-                                    <div class="carousel-caption d-block">
-                                        <p class="fs-4">"I just have to [...] throw it all away and it just feels [...]
-                                            wasteful." </p>
-                                    </div>
-                                </div>
-                            </div><!-- end of div style min-height: 250px; -->
-                        </div>
-                        <div class="carousel-item">
-                            <!-- Instead of image, div with style and min-height -->
-                            <div class="container">
-                                <div style="min-height: 250px;">
-                                    <div class="carousel-caption d-block">
-                                        <p class="fs-4">"If I'm really doing well, maybe I would just be able to figure
-                                            it
-                                            out as I'm coding and not have to stop." </p>
-                                    </div>
-                                </div>
-                            </div><!-- end of div style min-height: 250px; -->
-                        </div>
-                        <div class="carousel-item">
-                            <!-- Instead of image, div with style and min-height -->
-                            <div class="container">
-                                <div style="min-height: 250px;">
-                                    <div class="carousel-caption d-block">
-                                        <p class="fs-4">"I [think] that programmers need to know every single little
-                                            piece of
-                                            syntax and every code and how to at least start doing everything."
-                                        </p>
-                                    </div>
-                                </div>
-                            </div><!-- end of div style min-height: 250px; -->
-                        </div>
-                        <div class="carousel-item">
-                            <!-- Instead of image, div with style and min-height -->
-                            <div class="container">
-                                <div style="min-height: 250px;">
-                                    <div class="carousel-caption d-block">
-                                        <p class="fs-4">"I don't know if I'm just struggling and everyone else is
-                                            breezing
-                                            through it [...] I feel like I'm not as smart as everyone else."
-                                        </p>
-                                    </div>
-                                </div>
-                            </div><!-- end of div style min-height: 250px; -->
-                        </div>
-                        <div class="carousel-item">
-                            <!-- Instead of image, div with style and min-height -->
-                            <div class="container">
-                                <div style="min-height: 250px;">
-                                    <div class="carousel-caption d-block">
-                                        <p class="fs-4">"It feels like we’re competing with some geniuses and [...] I’m
-                                            thinking,
-                                            '[...] they would understand it right
-                                            away.
-                                            Why
-                                            am I
-                                            not
-                                            doing
-                                            that?'"</p>
-                                    </div>
-                                </div>
-                            </div><!-- end of div style min-height: 250px; -->
-                        </div>
-                        <div class="carousel-item">
-                            <!-- Instead of image, div with style and min-height -->
-                            <div class="container">
-                                <div style="min-height: 250px;">
-                                    <div class="carousel-caption d-block">
-                                        <p class="fs-4">"The professor always tells me, your code wouldn’t run if you
-                                            [had
-                                            ...] one
-                                            parenthesis mismatch. So I
-                                            learned that
-                                            errors
-                                            are
-                                            actually really critical."</p>
-                                    </div>
-                                </div>
-                            </div><!-- end of div style min-height: 250px; -->
-                        </div>
-                        <div class="carousel-item">
-                            <!-- Instead of image, div with style and min-height -->
-                            <div class="container">
-                                <div style="min-height: 250px;">
-                                    <div class="carousel-caption d-block">
-                                        <p class="fs-4">"You think to yourself, 'oh, I should be understanding how to
-                                            fix
-                                            this. My
-                                            friendwould
-                                            just do this right away.'" </p>
-                                    </div>
-                                </div>
-                            </div><!-- end of div style min-height: 250px; -->
+                <div class="row">
+                    <div class=" col-sm-12 col-md-4 col-lg-2">
+                        <div class="speech-bubble text-white" style="background-color: #f9f">
+                            <p>"I felt like I was behind and other people wouldn't take [...]
+                                as long." </p>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#quote-carousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#quote-carousel"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="col-sm-12 col-md-4 col-lg-2">
+                        <div class="speech-bubble text-white" style="background-color: #99F">
+                            <p>"Having to use an outside resource [...] maybe I shouldn't have
+                                to use makes me feel like I could do better." </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-2">
+                        <div class="speech-bubble text-white" style="background-color: #09f">
+                            <p>"If I'm really doing well, maybe I would just be able to figure
+                                it out as I'm coding and not have to stop." </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-2">
+                        <div class="speech-bubble text-white" style="background-color: #09C">
+                            <p>"I [think] that programmers need to know every single little
+                                piece of syntax and every code and how to at least start doing everything."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-2">
+                        <div class="speech-bubble text-white" style="background-color: #096">
+                            <p>"You think to yourself, 'oh, I should be understanding how to
+                                fix this. My friend would just do this right away.'" </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-2">
+                        <div class="speech-bubble text-white" style="background-color: #093">
+                            <p>"When I don't know where to begin or what I should write down
+                                first
+                                or import some data, I just feel like, 'oh, I'm really bad on programing.'"
+                        </div>
+                    </div>
                 </div>
-
 
 
                 <p class="fs-5"> Even though we expect students to make mistakes, struggle, take

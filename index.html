@@ -7,34 +7,7 @@
     <title>Supporting students in accurately evaluating their programming abilities</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        h2 {
-            margin-top: 30px;
-            margin-bottom: 20px;
-        }
-
-        .speech-bubble {
-            min-height: 200px;
-            min-width: 100px;
-            border-radius: 20px;
-            padding: 25%;
-            position: relative;
-            margin-bottom: 20px;
-
-        }
-
-        .speech-bubble::after {
-            content: '';
-            position: absolute;
-            top: 100%;
-            left: 25%;
-            height: 20px;
-            width: 20px;
-            box-sizing: border-box;
-            transform: rotate(45deg) translate(-75%);
-            background: inherit;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -83,40 +56,32 @@
                     heard things like this in our interviews:</p>
 
                 <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-2">
-                        <div class="speech-bubble text-dark" style="background-color: #f9f">
-                            <p><i>"I felt like I was behind and other people wouldn't take [...]
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="speech-bubble-right text-dark" style="background-color: #f9f">
+                            <p class="fs-5"><i>"I felt like I was behind and other people wouldn't take [...]
                                     as long." </i></p>
                         </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-2">
-                        <div class="speech-bubble text-dark" style="background-color: #99F">
-                            <p><i>"Having to use an outside resource [...] maybe I shouldn't have
+                        <div class="speech-bubble-left text-dark" style="background-color: #99F">
+                            <p class="fs-5"><i>"Having to use an outside resource [...] maybe I shouldn't have
                                     to use makes me feel like I could do better." </i></p>
                         </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-2">
-                        <div class="speech-bubble text-dark" style="background-color: #09f">
-                            <p><i>"If I'm really doing well, maybe I would just be able to figure
+                        <div class="speech-bubble-center text-dark" style="background-color: #09f">
+                            <p class="fs-5"><i>"If I'm really doing well, maybe I would just be able to figure
                                     it out as I'm coding and not have to stop." </i></p>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-2">
-                        <div class="speech-bubble text-dark" style="background-color: #09C">
-                            <p><i>"I [think] that programmers need to know every single little
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="speech-bubble-center text-dark" style="background-color: #09C">
+                            <p class="fs-5"><i>"I [think] that programmers need to know every single little
                                     piece of syntax and every code and how to at least start doing everything."
                                 </i></p>
                         </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-2">
-                        <div class="speech-bubble text-dark" style="background-color: #096">
-                            <p><i>"You think to yourself, 'oh, I should be understanding how to
+                        <div class="speech-bubble-right text-dark" style="background-color: #096">
+                            <p class="fs-5"><i>"You think to yourself, 'oh, I should be understanding how to
                                     fix this. My friend would just do this right away.'" </i></p>
                         </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-2">
-                        <div class="speech-bubble text-dark" style="background-color: #093">
-                            <p><i>"When I don't know where to begin or what I should write down
+                        <div class="speech-bubble-left text-dark" style="background-color: #093">
+                            <p class="fs-5"><i>"When I don't know where to begin or what I should write down
                                     first
                                     or import some data, I just feel like, 'oh, I'm really bad on programing.'"</i></p>
                         </div>
